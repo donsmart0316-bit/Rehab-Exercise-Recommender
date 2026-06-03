@@ -13,4 +13,4 @@ pymupdf
 openpyxl
 langchain-huggingface 
 langchain-text-splitters 
-profile
+
