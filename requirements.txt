@@ -11,3 +11,7 @@ python-dotenv
 fpdf
 pymupdf
 openpyxl
+langchain_huggingface 
+langchain_text_splitters 
+langchain_community.document_loaders
+profile
