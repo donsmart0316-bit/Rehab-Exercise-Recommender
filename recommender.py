@@ -93,7 +93,7 @@ def load_rag_vectorstore():
     return vectorstore
     
 vectorstore = load_rag_vectorstore() 
-retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 12, "fetch_k": 20})
+retriever = vectorstore.as_retriever(search_type="mmr", search_kwargs={"k": 15, "fetch_k": 23})
 
 # ====================== SMART QUERY BUILDER ======================
 
@@ -311,7 +311,7 @@ Weekly Progression:
     return llm.invoke(prompt).content
 
 # ====================== GENERATE PLAN ======================
-if st.button("🚀 Generate Hybrid Personalized Plan", type="primary", use_container_width=True, key="generate_btn"):
+if st.button("🚀 Generate Personalized Plan", type="primary", use_container_width=True, key="generate_btn"):
     if not valid_conditions(condition):
         st.error("Please enter a valid condition to generate a plan.")
         st.stop()
