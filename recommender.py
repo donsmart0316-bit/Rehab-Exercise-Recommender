@@ -5,6 +5,7 @@ import os
 from datetime import datetime
 from dotenv import load_dotenv
 import shutil
+import profile
 
 from langchain_huggingface import HuggingFaceEmbeddings
 from sklearn.neighbors import NearestNeighbors
